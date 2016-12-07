@@ -17,25 +17,27 @@ def crearLista(lista):
              lista.append(elemento)
         
 def imprimirLista (lista):
-      '''
+   '''
         voy a imprimir una lista donde incluya una serie de elemenetos
-      '''
-    try:
+        
+   '''
+   try:
         for indice in lista:
             print(indice)
-    except:
+   except:
         print("alerta de bomba")    
 def separarLista (lista):
-      '''
+   '''
         voy a separar una lista donde incluya una serie de elemenetos
-      '''
-    id_paciente=lista[0] 
-    fase_ensayo=lista[1]
-    serie_temperaturas=lista[2:]
-    return id_paciente, fase_ensayo, serie_temperaturas
+        
+   '''
+   id_paciente=lista[0] 
+   fase_ensayo=lista[1]
+   serie_temperaturas=lista[2:]
+   return id_paciente, fase_ensayo, serie_temperaturas
 if __name__=="__main__":
     l=[]
     crearLista(l)
     imprimirLista(l)
-    id_p, fase_e, s_temp=separarLista(lista)
-    print( id_p,fase_e,s_temp)
+    id_p, fase_e, s_temp=separarLista(l)
+    print(id_p,fase_e,s_temp)
